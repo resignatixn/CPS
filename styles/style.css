@@ -25,6 +25,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
 main {
   background-color: #f8f8f8;
 }
@@ -199,6 +204,10 @@ ul {
   display: flex;
   white-space: nowrap;
   overflow-x: auto;
+}
+
+.nav__items::-webkit-scrollbar {
+  display: none;
 }
 
 .nav__item {
