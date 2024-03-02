@@ -72,12 +72,16 @@ ul {
 }
 
 .header__link {
+  background-image: url(../public/logo.svg);
+  width: 96.55px;
+  height: 50.81px;
   margin-left: 16px;
 }
 
-.header__button {
-  display: flex;
-  align-items: center;
+.header__left .header__button {
+  background-image: url(../public/burger.svg);
+  height: 40px;
+  width: 40px;
 }
 
 .header__right {
@@ -85,30 +89,67 @@ ul {
   align-items: center;
 }
 
-.header__right .header__button:nth-child(4)::before {
+/* .header__right .header__button:nth-child(3)::after {
   content: '';
   display: inline-block;
   width: 2px;
   height: 32px;
   border-radius: 1px;
   background-color: #eaeaea;
-  margin: 0 20px;
-}
+  margin: 0 51px;
+} */
 
 .header__right .header__button {
   margin: 0 8px;
 }
 
 .header__right .header__button:last-child {
+  background-image: url(../public/checkstatus.svg);
+  width: 40px;
+  height: 40px;
   margin: 0 0 0 8px;
+}
+
+.header__right .header__button:nth-child(1) {
+  background-image: url(../public/call.svg);
+  width: 40px;
+  height: 40px;
+  margin: 0 12px 0 8px;
+}
+
+.header__right .header__button:nth-child(2) {
+  background-image: url(../public/chat.svg);
+  width: 40px;
+  height: 40px;
+  margin: 0 12px 0 8px;
 }
 
 .header__right .header__button:nth-child(3) {
-  margin: 0 0 0 8px;
+  background-image: url(../public/profile.svg);
+  width: 40px;
+  height: 40px;
+  margin: 0 12px 0 8px;
 }
 
 .header__right .header__button:nth-child(4) {
-  margin: 0 8px 0 0;
+  background-image: url(../public/repair.svg);
+  width: 40px;
+  height: 40px;
+  margin: 0 8px 0 12px;
+}
+
+.header__right .header__button:nth-child(4)::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 2px;
+  height: 32px;
+  left: -64px;
+  top: 1px;
+  border-radius: 1px;
+  background-color: #eaeaea;
+  margin: 0 51px;
+  cursor: default;
 }
 
 .header__button--hidden {
@@ -119,15 +160,18 @@ ul {
   .header__left .header__button:first-child::after {
     content: '';
     display: inline-block;
+    position: relative;
+    top: 1px;
+
     width: 2px;
     height: 32px;
     border-radius: 1px;
     background-color: #eaeaea;
-    margin: 0 20px;
+    margin: 0 50px;
   }
 
   .header__link {
-    margin-left: 0px;
+    margin-left: 20px;
   }
 
   .header__button--hidden {
